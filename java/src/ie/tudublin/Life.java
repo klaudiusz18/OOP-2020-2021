@@ -69,7 +69,7 @@ public class Life extends PApplet {
 
     public void setCell(boolean[][] board, int row, int col, boolean b)
     {
-        if(row > 0 && row < size -1 && col > 0 && col < size -1)
+        if(row >= 0 && row < size -1 && col >= 0 && col < size -1)
         {
             board[row][col] = b;
         }
@@ -77,7 +77,7 @@ public class Life extends PApplet {
 
     public boolean getCell(boolean[][] board,int row, int col)
     {
-        if(row > 0 && row < size -1 && col > 0 && col < size -1)
+        if(row >= 0 && row < size -1 && col >= 0 && col < size -1)
         {
             return board[row][col];
         }
