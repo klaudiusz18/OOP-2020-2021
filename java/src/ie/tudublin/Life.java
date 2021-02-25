@@ -186,7 +186,22 @@ public class Life extends PApplet {
     {
         // Put code here to apply the rules!!
 
-        
+        boolean b;
+        for(int row = 0 ; row < size ; row ++)
+        {
+            for (int col = 0 ; col < size ; col ++)
+            {
+                if (board[row][col] == b)
+                {
+                   board[row][col] = b; 
+                }
+                else
+                {
+                    board[row][col] =! b; 
+                }
+            }
+
+        }
         // Swap board and next
         boolean[][] temp = board;
         board = next;
